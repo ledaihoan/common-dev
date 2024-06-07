@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-INSTALL_LIST_FILE="$CURRENT_DIR/install_list.txt"
+PARENT_DIR="$(dirname "$(dirname "${BASH_SOURCE[0]}")")"
+INSTALL_LIST_FILE="$PARENT_DIR/install_list.txt"
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install curl git htop vim -y
 

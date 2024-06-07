@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ~/.nvm/nvm.sh
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Define the path to the global_modules.txt file
