@@ -18,3 +18,4 @@ else
     exit 1
 fi
 "$CURRENT_DIR"/$OS/install_env.sh
+echo "Installation completed...Please log out and login again with current user or restart your machine to ensure the environment update works correctly!"
