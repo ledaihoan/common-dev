@@ -3,7 +3,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PARENT_DIR="$(dirname "$(dirname "${BASH_SOURCE[0]}")")"
 INSTALL_LIST_FILE="$PARENT_DIR/install_list.txt"
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install curl git htop vim -y
+sudo apt-get install curl wget git htop vim -y
 
 # Check if the file exists
 if [ -f "$INSTALL_LIST_FILE" ]; then
