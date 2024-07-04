@@ -5,7 +5,11 @@ if [ -f /etc/os-release ]; then
     OS=$(awk -F= '/^ID=/{print $2}' /etc/os-release | tr -d '"')
 else
     echo "File /etc/os-release not found"
-    OS=unknown_os
+    if [[ "$(uname)" == "Darwin" ]]; then
+      OS=macos
+    else
+      OS=unknown_os
+    fi
 fi
 echo "Detected OS: $OS..."
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

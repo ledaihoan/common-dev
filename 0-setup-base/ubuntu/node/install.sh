@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-NODE_VERSION=20.13.1
+NODE_VERSION=20.15.0
 IS_DEFAULT=1
 echo "1. Installing NVM..."
 "$CURRENT_DIR"/install_nvm.sh
